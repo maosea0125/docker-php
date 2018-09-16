@@ -1,9 +1,15 @@
 # docker-php
 
+**php目录**
+
+```
+/usr/local/php
+```
+
 ### 使用方式1
 ```sh
 # 构建镜像
-docker build -t "qq1060656096/php:7.2.2-kafka" 7.2.2
+docker build -t "qq1060656096/php:7.2.2-kafka" 7.2.2-kafka
 # 启动容器
 docker run -dti --name php-kafka qq1060656096/php:7.2.2-kafka
 # 进入容器
@@ -21,7 +27,7 @@ docker ps
 ### 使用方式2
 ```sh
 # 构建镜像
-docker build -t "qq1060656096/php:7.2.2-kafka" 7.2.2
+docker build -t "qq1060656096/php:7.2.2-kafka" 7.2.2-kafka
 # 启动容器
 docker run -tid -p 1090:9000 --name php-kafka qq1060656096/php:7.2.2-kafka /usr/local/php/sbin/php-fpm -F
 # 进入容器
