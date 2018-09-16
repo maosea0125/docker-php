@@ -1,4 +1,4 @@
-# docker-php
+# docker-php-kafka
 
 ### 使用方式1
 ```sh
