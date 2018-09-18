@@ -32,7 +32,8 @@ RUN set -x \
         && make install \
         && sed -i '/;extension=shmop/a\extension=rdkafka' /usr/local/php/lib/php.ini \
         && cd /home \
-        && rm -rf /home/php-rdkafka-3.0.5*\
+        && rm -rf /home/php-rdkafka-3.0.5* \
+        && yum remove -y make gcc gcc-c++ \
         && yum clean all \
         && rm -rf /tmp/*
-CMD ["/usr/local/php/sbin/php-fpm" "-F"]
+ENTRYPOINT ["/usr/local/php/sbin/php-fpm", "-F"]

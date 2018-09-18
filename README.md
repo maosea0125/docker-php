@@ -18,7 +18,7 @@ php扩展:
 ### 使用方式1
 ```sh
 # 构建镜像
-DOCKER 
+docker build -t "qq1060656096/php:7.2.2-kafka" 7.2.2-kafka
 # 启动容器
 docker run -tid --name php-kafka qq1060656096/php:7.2.2-kafka
 # 进入容器
