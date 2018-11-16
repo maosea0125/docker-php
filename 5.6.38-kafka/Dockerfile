@@ -29,7 +29,7 @@ RUN set -x \
         && ./configure  --with-php-config=/usr/local/php/bin/php-config \
         && make \
         && make install \
-        && sed -i '/;extension=shmop/a\extension=rdkafka' /usr/local/php/lib/php.ini \
+        && sed -i '/;extension=shmop/a\extension=rdkafka.so' /usr/local/php/lib/php.ini \
         && cd /home \
         && rm -rf /home/php-rdkafka-3.0.5* \
         && yum remove -y make gcc gcc-c++ \
