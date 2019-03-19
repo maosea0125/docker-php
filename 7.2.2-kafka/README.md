@@ -6,7 +6,7 @@
    系统: centos7
     php: php-7.2.2
 php扩展:
-    bcmath, Core, ctype, curl, date, dom, fileinfo, filter, gd, gettext, hash, iconv, json, libxml, mbstring, mysqli, mysqlnd, openssl, pcntl, pcre, PDO, pdo_mysql, pdo_sqlite, Phar, posix, rdkafka, Reflection, session, SimpleXML, sockets, SPL, sqlite3, standard, sysvsem, tokenizer, xml, xmlreader, xmlrpc, xmlwriter, xsl, zip, zlib
+    bcmath, Core, ctype, curl, date, dom, fileinfo, filter, gd, gettext, hash, iconv, json, libxml, mbstring, mysqli, mysqlnd, openssl, pcntl, pcre, PDO, pdo_mysql, pdo_sqlite, Phar, posix, rdkafka, Reflection, session, SimpleXML, sockets, SPL, sqlite3, standard, sysvsem, tokenizer, xml, xmlreader, xmlrpc, xmlwriter, xsl, zip, zlib, redis
 ```
 
 **php目录**
