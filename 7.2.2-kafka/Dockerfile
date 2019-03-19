@@ -33,6 +33,16 @@ RUN set -x \
         && sed -i '/;extension=shmop/a\extension=rdkafka' /usr/local/php/lib/php.ini \
         && cd /home \
         && rm -rf /home/php-rdkafka-3.0.5* \
+	&& cd /home \
+	&& tar zxf redis-4.3.0.tgz \
+	&& cd redis-4.3.0 \
+	&& /usr/local/php/bin/phpize \
+	&& ./configure  --with-php-config=/usr/local/php/bin/php-config \
+	&& make \
+	&& make install \
+	&& sed -i '/extension=rdkafka/a\extension=redis' /usr/local/php/lib/php.ini \
+	&& cd /home \
+	&& rm -rf /home/redis-4.3.0 \
         && yum remove -y make gcc gcc-c++ \
         && yum clean all \
         && rm -rf /tmp/*
